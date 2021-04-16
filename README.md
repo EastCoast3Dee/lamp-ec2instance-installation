@@ -37,7 +37,7 @@ Create an ec2 instance with an Ubuntu server and host a Wordpress site
 
 13. Connect to the Linux instance over SSH using PuTTY Key Generator to create .ppk file.
 
-## LAMP Installation
+## 2. LAMP Installation
 Use the copied IP address to connect to the Linux server as ubuntu@[ec2 ip address here].
 
 Ensure you are in the home directory and perform an update.
@@ -73,7 +73,7 @@ GRANT ALL ON wordpress.* TO 'wordpressuser'@'%';
 FLUSH PRIVILEGES;
 exit
 ```
-## Install Wordpress
+## 3. Install Wordpress
 
 Download and Extract Wordpress, Create VHost
 
@@ -129,7 +129,7 @@ Give Wordpress Access to the Database.
 
 To do this, provide the name and password of the database created earlier in MySql. Change the Table Prefix from the default to enhance security of the site. After creating a Wordpress account, click on Install Wordpress.
 
-## Host Site Using Route 53
+## 4. Host Site Using Route 53
 
 1. In AWS Console, choose Route 53.
 
