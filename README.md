@@ -139,3 +139,5 @@ To do this, provide the name and password of the database created earlier in MyS
 
 4. For the value, use the public IP address of the ec2 instance.
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
