@@ -1,4 +1,4 @@
-# LAMP_EC2Instance_Installation
+# LAMP EC2 Instance Installation
 Install LAMP for use with AWS EC2 Web Server Instance
 
 ## Description
