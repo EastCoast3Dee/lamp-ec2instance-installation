@@ -5,12 +5,15 @@ Install LAMP for use with AWS EC2 Web Server Instance
 Create an ec2 instance with an Ubuntu server and host a Wordpress site
 
 ## Table of Contents
-1. Create an ec2 Instance
-2. Install LAMP
-3. Install Wordpress
-4. Host Site Using Route 53
+[Create an AWS ec2 Instance](-create-an-aws-ec2-instance)
 
-## 1. Create AWS ec2 Instance
+[Install LAMP](-install-lamp)
+
+[Install Wordpress](-install-wordpress)
+
+[Host Site Using Route 53](-host-site-using-route-53)
+
+# Create an AWS ec2 Instance
 1.  Using AWS or AWS Educate account, Launch Instance.
 
 2.  Choose Ubuntu Server 20.04 LTS (HVM) SSD Volume Type 64-bit(x86) as the AMI (Amazon Machine Image).
@@ -37,7 +40,7 @@ Create an ec2 instance with an Ubuntu server and host a Wordpress site
 
 13. Connect to the Linux instance over SSH using PuTTY Key Generator to create .ppk file.
 
-## 2. LAMP Installation
+# Install LAMP
 Use the copied IP address to connect to the Linux server as ubuntu@[ec2 ip address here].
 
 Ensure you are in the home directory and perform an update.
@@ -73,7 +76,7 @@ GRANT ALL ON wordpress.* TO 'wordpressuser'@'%';
 FLUSH PRIVILEGES;
 exit
 ```
-## 3. Install Wordpress
+# Install Wordpress
 
 Download and Extract Wordpress, Create VHost
 
@@ -129,7 +132,7 @@ Give Wordpress Access to the Database.
 
 To do this, provide the name and password of the database created earlier in MySql. Change the Table Prefix from the default to enhance security of the site. After creating a Wordpress account, click on Install Wordpress.
 
-## 4. Host Site Using Route 53
+# Host Site Using Route 53
 
 1. In AWS Console, choose Route 53.
 
